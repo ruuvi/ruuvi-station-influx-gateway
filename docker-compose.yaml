@@ -1,0 +1,13 @@
+# https://docs.docker.com/compose/compose-file/
+
+version: "3.7"
+services:
+  ruuvi-station-gateway:
+    build: ./
+    image: ruuvi-station-gateway:latest
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "3000:3000/tcp"
+    network_mode: host
