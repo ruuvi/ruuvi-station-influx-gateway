@@ -1,0 +1,35 @@
+{
+  "tags": [
+    {
+      "accelX": 0,
+      "accelY": 0,
+      "accelZ": 1,
+      "dataFormat": 3,
+      "defaultBackground": 6,
+      "favorite": true,
+      "humidity": 42,
+      "id": "10:0B:14:29:1B:01",
+      "measurementSequenceNumber": 0,
+      "movementCounter": 0,
+      "name": "Example",
+      "pressure": 1000,
+      "rawDataBlob": [
+        null
+      ],
+      "rssi": -91,
+      "temperature": 42,
+      "txPower": 0,
+      "updateAt": "2020-05-02T18:58:25+0300",
+      "voltage": 3.14
+    }
+  ],
+  "batteryLevel": 18,
+  "deviceId": "a3af7fe3-03c6-47ba-ac07-8c800f59aff3",
+  "eventId": "011ccc56-a0b8-4d22-8f50-8a9c0c1f95da",
+  "location": {
+    "accuracy": 2000,
+    "latitude": 0,
+    "longitude": 0
+  },
+  "time": "2020-05-02T18:58:25+0300"
+}
