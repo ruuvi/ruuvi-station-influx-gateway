@@ -46,6 +46,15 @@ The server requires the following environment variables
 You can configure them in the `.env` file or configure them via
 e.g. cloud platform runtime configuration for other systems.
 
+### API endpoints
+
+The server exposes the following API endpoints
+
+| URL                | Method | Description or example                    |
+| ------------------ | ------ | ----------------------------------------- |
+| GET `/api/health`  | GET    | Fetch service status                      |
+| GET `/api/station` | POST   | Send Ruuvi Station data about RuuviTags   |
+
 ### Serverless
 
 The application should also work with e.g.
