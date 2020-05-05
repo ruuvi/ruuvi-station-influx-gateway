@@ -50,10 +50,10 @@ e.g. cloud platform runtime configuration for other systems.
 
 The server exposes the following API endpoints
 
-| URL                | Method | Description or example                    |
-| ------------------ | ------ | ----------------------------------------- |
-| GET `/api/health`  | GET    | Fetch service status                      |
-| GET `/api/station` | POST   | Send Ruuvi Station data about RuuviTags   |
+| URL                | Method | Description or example        |
+| ------------------ | ------ | ----------------------------- |
+| GET `/api/health`  | GET    | Uptime monitoring             |
+| GET `/api/station` | POST   | Ruuvi Station Gateway URL     |
 
 ### Serverless
 
