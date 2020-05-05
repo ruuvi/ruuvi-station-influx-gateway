@@ -24,7 +24,7 @@ Creating an account should only take a few minutes.
 1. Setup an InfluxDB server and organization at e.g. [InfluxDB Cloud](https://cloud.influxdata.com/).
 2. [**Create Bucket** for InfluxDB](https://v2.docs.influxdata.com/v2.0/organizations/buckets/create-bucket/).
 3. [Generate **Read/Write Token** for InfluxDB](https://v2.docs.influxdata.com/v2.0/security/tokens/create-token/).
-4. Clone the repository with `git clone git@github.com:aleksihakli/prikka.git`.
+4. Clone the repository with `git clone git@github.com:ruuvi/prikka.git`.
 5. Copy `.env.example` to `.env` and configure necessary environment flags.
 6. Run the service with e.g. `docker-compose up --build`.
 7. Set your Ruuvi Station mobile application to point to the service at `http://<ip>:<port>/api/station`.
