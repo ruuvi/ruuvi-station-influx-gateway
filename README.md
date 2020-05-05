@@ -12,7 +12,7 @@ This application has been tested to work with the following setup:
       > Prikka                  (this project)
       > InfluxDB 2.0            (free-to-use SaaS cloud)
 
-**NOTE** please note that this is a community project under MIT license.
+**Please note** that this is a community project under MIT license.
 
 ### Getting started
 
