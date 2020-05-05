@@ -7,10 +7,10 @@ measurements from RuuviTag to an InfluxDB 1.8+ and 2.0+ time-series database.
 
 This application has been tested to work with the following setup:
 
-    RuuviTag                    (Ruuvi hardware sensor)
-      > Ruuvi Station           (Ruuvi mobile application)
-      > Prikka                  (this project)
-      > InfluxDB 2.0            (free-to-use SaaS cloud)
+    RuuviTag           (Ruuvi hardware sensor)
+    > Ruuvi Station    (Ruuvi mobile application)
+    > Prikka           (this project)
+    > InfluxDB 2.0     (free-to-use SaaS cloud)
 
 **Please note** that this is a community project under MIT license.
 
