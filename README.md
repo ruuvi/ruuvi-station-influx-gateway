@@ -1,16 +1,18 @@
 # Prikka
 
-This project offers an unofficial open-source implementation for
+This project offers an open-source implementation for
 [Ruuvi Station](https://ruuvi.com/manuals/station/app-settings/)
 gateway API server that can push Ruuvi Station mobile application
 measurements from RuuviTag to an InfluxDB 1.8+ and 2.0+ time-series database.
 
 This application has been tested to work with the following setup:
 
-    RuuviTag                    (official Ruuvi hardware sensor)
-      > Ruuvi Station           (official Ruuvi mobile application)
-      > Prikka                  (this unofficial software project)
-      > InfluxDB 2.0            (official free-to-use SaaS cloud)
+    RuuviTag                    (Ruuvi hardware sensor)
+      > Ruuvi Station           (Ruuvi mobile application)
+      > Prikka                  (this project)
+      > InfluxDB 2.0            (free-to-use SaaS cloud)
+
+**NOTE** please note that this is a community project under MIT license.
 
 ### Getting started
 
@@ -41,9 +43,8 @@ The server requires the following environment variables
 | `INFLUX_ORG`    | Influx organization                       |
 | `INFLUX_BUCKET` | Influx data bucket                        |
 
-You can configure them in the `.env` file or inject them environment variables.
-
-Docker Compose and the Node.js server both pick up the .env file.
+You can configure them in the `.env` file or configure them via
+e.g. cloud platform runtime configuration for other systems.
 
 ### Serverless
 
@@ -52,8 +53,9 @@ The application should also work with e.g.
 - AWS Lambdas,
 - Azure Functions,
 - Google Cloud Functions,
+- Heroku,
 
-or similar serverless runtime environments.
+or similar more or less serverless runtime environments.
 
 The server itself is implemented in `index.js` and has under 100 lines of code
 aside from dependencies defined in `package.json` and `package-lock.json`.
