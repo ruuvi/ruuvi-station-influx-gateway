@@ -81,8 +81,8 @@ setting cloud function configuration via environment variables.
 
 Health endpoint answers to plain GET requests:
 
-    curl -v --header "Content-Type: application/json" http(s)://<host>:<port>/api/health
+    curl -v -H "Content-Type: application/json" <host>:<port>/api/health
 
 You can use cURL to test the backend deployment and data ingress with a POST verb and example measurement payload:
 
-    curl -v --header "Content-Type: application/json" -d @measurement.json.example -X POST http(s)://<host>:<port>/api/station
+    curl -v -H "Content-Type: application/json" -d @measurement.json.example -X POST <host>:<port>/api/station
