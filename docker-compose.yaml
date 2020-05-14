@@ -2,9 +2,9 @@
 
 version: "3.7"
 services:
-  prikka:
+  ruuvi-station-influx-gateway:
     build: ./
-    image: prikka:latest
+    image: ruuvi-station-influx-gateway:latest
     restart: unless-stopped
     env_file:
       - .env

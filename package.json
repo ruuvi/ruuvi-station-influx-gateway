@@ -1,8 +1,8 @@
 {
-  "name": "prikka",
+  "name": "ruuvi-station-influx-gateway",
   "version": "0.1.0",
   "main": "index.js",
-  "repository": "https://github.com/aleksihakli/prikka",
+  "repository": "https://github.com/ruuvi/ruuvi-station-influx-gateway",
   "license": "MIT",
   "scripts": {
     "start": "node index.js"

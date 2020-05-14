@@ -1,4 +1,4 @@
-# Prikka
+# ruuvi-station-influx-gateway
 
 This project offers an open-source implementation for
 [Ruuvi Station](https://ruuvi.com/manuals/station/app-settings/)
@@ -7,10 +7,10 @@ measurements from RuuviTag to an InfluxDB 1.8+ and 2.0+ time-series database.
 
 This application has been tested to work with the following setup:
 
-    RuuviTag           (Ruuvi hardware sensor)
-    > Ruuvi Station    (Ruuvi mobile application)
-    > Prikka           (this project)
-    > InfluxDB 2.0     (free-to-use SaaS cloud)
+    RuuviTag                                    (Ruuvi hardware sensor)
+    > Ruuvi Station                             (Ruuvi mobile application)
+    > ruuvi-station-influx-gateway              (this project)
+    > InfluxDB 2.0                              (free-to-use SaaS cloud works)
 
 **Please note** that this is a community project under MIT license.
 
@@ -24,7 +24,7 @@ Creating an account should only take a few minutes.
 1. Setup an InfluxDB server and organization at e.g. [InfluxDB Cloud](https://cloud.influxdata.com/).
 2. [**Create Bucket** for InfluxDB](https://v2.docs.influxdata.com/v2.0/organizations/buckets/create-bucket/).
 3. [Generate **Read/Write Token** for InfluxDB](https://v2.docs.influxdata.com/v2.0/security/tokens/create-token/).
-4. Clone the repository with `git clone git@github.com:ruuvi/prikka.git`.
+4. Clone the repository with `git clone git@github.com:ruuvi/ruuvi-station-influx-gateway.git`.
 5. Copy `.env.example` to `.env` and configure necessary environment flags.
 6. Run the service with e.g. `docker-compose up --build`.
 7. Set your Ruuvi Station mobile application to point to the service at `http://<ip>:<port>/api/station`.
@@ -71,7 +71,7 @@ aside from dependencies defined in `package.json` and `package-lock.json`.
 
 Deployment package into a cloud environment could be achieved with:
 
-    zip prikka.zip index.js package.json
+    zip ruuvi-station-influx-gateway.zip index.js package.json
 
 Configuration in serverless environments is ideally achieved without
 hardcoding the configuration flags and all environments should support
